@@ -1,76 +1,76 @@
 <script lang="ts">
-  import svelte from "./assets/svelte.png";
-  import Navbar from "./Navbar.svelte";
-  import About from "./About.svelte";
+    import svelte from "./assets/svelte.png";
+    import Navbar from "./Navbar.svelte";
+    import About from "./About.svelte";
 
-  const name = "the_4n0nym0u53";
-  let currentTab: number;
+    const name = "the_4n0nym0u53";
+    let currentTab: number;
 
-  let tabs = [
-    { label: "About", value: 1 },
-    { label: "Contact", value: 2 },
-    { label: "Privacy Policy", value: 3 },
-  ];
+    let tabs = [
+        { label: "About", value: 1 },
+        { label: "Contact", value: 2 },
+        { label: "Privacy Policy", value: 3 },
+    ];
 </script>
 
 <header>
-  <Navbar bind:currentTab {name} {tabs} />
+    <Navbar bind:currentTab {name} {tabs} />
 </header>
 
 <main>
-  {#if currentTab === 1}
-    <About {name} />
-  {/if}
+    {#if currentTab === 1}
+        <About {name} />
+    {/if}
 
-  {#if currentTab === 2}
-    <h3>Tab 2 content</h3>
-  {/if}
+    {#if currentTab === 2}
+        <h3>Tab 2 content</h3>
+    {/if}
 
-  {#if currentTab === 3}
-    <h3>Tab 3 content</h3>
-  {/if}
+    {#if currentTab === 3}
+        <h3>Tab 3 content</h3>
+    {/if}
 </main>
 
 <footer>
-  <span>
-    This site is built with <a href="https://svelte.dev">Svelte.js</a>
-    <img src={svelte} alt="Svelte.js logo" />
-  </span>
+    <span>
+        This site is built with <a href="https://svelte.dev">Svelte.js</a>
+        <img src={svelte} alt="Svelte.js logo" />
+    </span>
 </footer>
 
 <style lang="scss">
-  :root {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  header,
-  main,
-  footer {
-    text-align: center;
-  }
-
-  header {
-    margin: 0;
-    padding: 0;
-  }
-
-  main {
-    padding: 10em;
-    margin: 0 auto;
-  }
-
-  footer {
-    margin: 0;
-    padding: 0;
-
-    span {
-      font-size: small;
-
-      img {
-        height: 1em;
-        width: 1em;
-      }
+    :root {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     }
-  }
+
+    header,
+    main,
+    footer {
+        text-align: center;
+    }
+
+    header {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding: 10em;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+
+        span {
+            font-size: small;
+
+            img {
+                height: 1em;
+                width: 1em;
+            }
+        }
+    }
 </style>
