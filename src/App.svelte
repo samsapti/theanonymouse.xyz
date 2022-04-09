@@ -1,29 +1,49 @@
 <script lang="ts">
-  import logo from "./assets/svelte.png";
-  import Counter from "./lib/Counter.svelte";
+  import src from "./assets/theanonymouse.png";
+  import Navbar from "./lib/Navbar.svelte";
+
+  const siteName = "the_4n0nym0u53";
+  let currentTab: number;
+
+  let tabs = [
+    { label: "About", value: 1 },
+    { label: "Blog", value: 2 },
+    { label: "Contact", value: 3 },
+    { label: "Privacy Policy", value: 4 },
+  ];
 </script>
 
+<header>
+  <Navbar bind:currentTab {siteName} {tabs} />
+</header>
+
 <main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello Typescript!</h1>
+  <img {src} alt="the_4n0nym0u53 profile" />
+  <h1>Hello from {siteName}!</h1>
+  <p>Welcome to my website!</p>
 
-  <Counter />
+  {#if currentTab === 1}
+    <h3>Tab 1 content</h3>
+  {/if}
 
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
+  {#if currentTab === 2}
+    <h3>Tab 2 content</h3>
+  {/if}
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
+  {#if currentTab === 3}
+    <h3>Tab 3 content</h3>
+  {/if}
 </main>
 
-<style>
+<style lang="scss">
   :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
   }
 
   main {
@@ -39,7 +59,6 @@
 
   h1 {
     color: #ff3e00;
-    text-transform: uppercase;
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.1;
