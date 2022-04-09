@@ -1,29 +1,25 @@
 <script lang="ts">
-  import src from "./assets/theanonymouse.png";
-  import Navbar from "./lib/Navbar.svelte";
+  import svelte from "./assets/svelte.png";
+  import Navbar from "./Navbar.svelte";
+  import About from "./About.svelte";
 
-  const siteName = "the_4n0nym0u53";
+  const name = "the_4n0nym0u53";
   let currentTab: number;
 
   let tabs = [
     { label: "About", value: 1 },
-    { label: "Blog", value: 2 },
-    { label: "Contact", value: 3 },
-    { label: "Privacy Policy", value: 4 },
+    { label: "Contact", value: 2 },
+    { label: "Privacy Policy", value: 3 },
   ];
 </script>
 
 <header>
-  <Navbar bind:currentTab {siteName} {tabs} />
+  <Navbar bind:currentTab {name} {tabs} />
 </header>
 
 <main>
-  <img {src} alt="the_4n0nym0u53 profile" />
-  <h1>Hello from {siteName}!</h1>
-  <p>Welcome to my website!</p>
-
   {#if currentTab === 1}
-    <h3>Tab 1 content</h3>
+    <About {name} />
   {/if}
 
   {#if currentTab === 2}
@@ -35,10 +31,23 @@
   {/if}
 </main>
 
+<footer>
+  <span>
+    This site is built with <a href="https://svelte.dev">Svelte.js</a>
+    <img src={svelte} alt="Svelte.js logo" />
+  </span>
+</footer>
+
 <style lang="scss">
   :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  header,
+  main,
+  footer {
+    text-align: center;
   }
 
   header {
@@ -47,38 +56,21 @@
   }
 
   main {
-    text-align: center;
-    padding: 1em;
+    padding: 10em;
     margin: 0 auto;
   }
 
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
+  footer {
+    margin: 0;
+    padding: 0;
 
-  h1 {
-    color: #ff3e00;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
-  }
+    span {
+      font-size: small;
 
-  p {
-    max-width: 14rem;
-    margin: 1rem auto;
-    line-height: 1.35;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
+      img {
+        height: 1em;
+        width: 1em;
+      }
     }
   }
 </style>
