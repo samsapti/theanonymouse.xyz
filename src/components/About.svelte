@@ -1,5 +1,5 @@
 <script lang="ts">
-  import src from "./assets/theanonymouse.png";
+  import src from "../assets/profile.png";
 
   export let name: string;
 </script>
@@ -11,15 +11,15 @@
   </div>
   <div id="about-me">
     <h2>Who am I?</h2>
-    <p>
-      Test test test test test test test test test test test test test test test test test test test test test test test test test test
-       test test test test test test test test test test test test test test test test test test test test test test
-    </p>
+    <ul>
+      <li>Software Development student</li>
+      <li>Privacy & Security Advocate</li>
+    </ul>
   </div>
 </div>
 
 <style lang="scss">
-  @import "./colors.scss";
+  @import "../scss/colorscheme.scss";
 
   #content {
     position: relative;
@@ -39,33 +39,22 @@
     height: 16rem;
     width: 16rem;
     border-radius: 50%;
+    background-color: $secondary;
   }
 
   h1 {
-    color: $orange;
+    color: $accent1;
     font-size: 3rem;
     margin: 3rem auto;
-    max-width: 14rem;
   }
 
   h2 {
-    color: $darkorange;
+    color: $accent2;
     font-size: 2rem;
     max-width: 75%;
   }
 
-  p {
-    max-width: 14rem;
-    line-height: 1.15;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
+  #about-me {
+    line-height: 1.5;
   }
 </style>

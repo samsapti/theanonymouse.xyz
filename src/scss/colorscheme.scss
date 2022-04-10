@@ -1,0 +1,21 @@
+$primary: #264653;
+$secondary: #ABCCD8;
+$accent1: #E76F51;
+$accent2: #F4A261;
+$accent3: #8FA6CB;
+$black: #000000;
+$white: #FFFFFF;
+$bg-light: #F5F5F5;
+$bg-dark: #121D2B;
+
+:root {
+  --background: #{$bg-light};
+  --text: #{$black};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #{$bg-dark};
+    --text: #{$white};
+  }
+}

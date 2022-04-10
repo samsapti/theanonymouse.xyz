@@ -1,9 +1,7 @@
 <script lang="ts">
-  import Navbar from "./Navbar.svelte";
-  import About from "./About.svelte";
-
-  import github from "./assets/github-logo.svg";
-  import license from "./assets/cc-logo.svg";
+  import About from "./components/About.svelte";
+  import InfoBar from "./components/InfoBar.svelte";
+  import NavBar from "./components/NavBar.svelte";
 
   let currentTab: string;
   let tabs = [
@@ -16,82 +14,58 @@
   const name = "the_4n0nym0u53";
 </script>
 
-<header>
-  <Navbar bind:currentTab {tabs} {name} />
-</header>
+<div id="content">
+  <header>
+    <NavBar bind:currentTab {tabs} {name} />
+  </header>
 
-<main>
-  {#if currentTab === tabs[0].href}
-    <About {name} />
-  {/if}
+  <main>
+    {#if currentTab === tabs[0].href}
+      <About {name} />
+    {/if}
 
-  {#if currentTab === tabs[1].href}
-    <h3>No content yet!</h3>
-  {/if}
+    {#if currentTab === tabs[1].href}
+      <h3>No content yet!</h3>
+    {/if}
 
-  {#if currentTab === tabs[2].href}
-    <h3>No content yet!</h3>
-  {/if}
-</main>
+    {#if currentTab === tabs[2].href}
+      <h3>No content yet!</h3>
+    {/if}
+  </main>
 
-<footer>
-  <span>
-    Source code can be found on
-    <a
-      target="_blank"
-      href="https://github.com/theanonymousexyz/theanonymouse.xyz"
-    >
-      GitHub
-      <img src={github} alt="GitHub logo" />
-    </a>
-  </span>
-  <span>
-    Licensed under
-    <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-      CC BY-NC-SA 4.0
-      <img
-        src={license}
-        alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
-      />
-    </a>
-  </span>
-</footer>
+  <footer>
+    <InfoBar />
+  </footer>
+</div>
 
 <style lang="scss">
-  @import "./colors.scss";
+  @import "./scss/colorscheme.scss";
 
   :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    background-color: $lightgray;
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  #content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+
+  header, footer {
+    width: 100%;
+    margin: 0;
   }
 
   main {
     padding: 5em;
-    padding-bottom: 3rem;
     display: flex;
     justify-content: center;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    span {
-      font-size: 1rem;
-      margin: 1em;
-
-      a {
-        text-decoration: none;
-      }
-
-      img {
-        height: 1em;
-      }
-    }
   }
 </style>

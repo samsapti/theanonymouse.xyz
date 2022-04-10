@@ -30,22 +30,22 @@
 </nav>
 
 <style lang="scss">
-  @import "./colors.scss";
+  @import "../scss/colorscheme.scss";
 
   a {
     text-decoration: none;
-    color: $lightgray;
+    color: $white;
   }
 
   #brand {
-    color: $lightgray;
+    color: $white;
     display: block;
     padding: 0 24px;
     font-size: 24px;
   }
 
   nav {
-    background-color: $black;
+    background-color: $primary;
     display: flex;
     align-items: center;
 
@@ -62,14 +62,11 @@
         display: block;
       }
 
-      .here .nav-item {
-        color: $black;
-      }
-
-      .here,
+      .here a,
       .nav-item:hover,
       .nav-item:focus {
-        background-color: $gray;
+        background-color: $secondary;
+        color: $black;
       }
     }
   }
