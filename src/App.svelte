@@ -18,21 +18,15 @@
   <header>
     <NavBar bind:currentTab {tabs} {name} />
   </header>
-
   <main>
     {#if currentTab === tabs[0].href}
       <About {name} />
-    {/if}
-
-    {#if currentTab === tabs[1].href}
+    {:else if currentTab === tabs[1].href}
       <h3>No content yet!</h3>
-    {/if}
-
-    {#if currentTab === tabs[2].href}
+    {:else if currentTab === tabs[2].href}
       <h3>No content yet!</h3>
     {/if}
   </main>
-
   <footer>
     <InfoBar />
   </footer>
