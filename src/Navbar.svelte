@@ -1,30 +1,31 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-    export let currentTab: number;
+    export let currentTab: string;
     export let name: string;
     export let tabs = [];
 
+    // Tab switch handler function
+    function handleTabSwitch() {
+        let hash = window.location.hash;
+        currentTab = (hash.length === 0 ? tabs[0].href : hash)
+    }
+
     // Set default tab to About page
-    onMount(() => {
-        if (Array.isArray(tabs) && tabs.length && tabs[0].value) {
-            currentTab = tabs[0].value;
-        }
-    });
+    onMount(handleTabSwitch);
 </script>
+
+<svelte:window on:hashchange={handleTabSwitch} />
 
 <nav>
     <a id="brand" href="/">{name}</a>
     <ul>
         {#if Array.isArray(tabs)}
-            {#each tabs as tab}
-                <li class:here={currentTab === tab.value}>
-                    <span
-                        class="nav-item"
-                        on:click={() => (currentTab = tab.value)}
-                    >
-                        {tab.label}
-                    </span>
+            {#each tabs as { href, label }}
+                <li class:here={currentTab === href}>
+                    <a class="nav-item" {href} on:click={handleTabSwitch}>
+                        {label}
+                    </a>
                 </li>
             {/each}
         {/if}
@@ -41,8 +42,7 @@
         text-decoration: none;
     }
 
-    a,
-    span {
+    a {
         color: #e7e7e7;
     }
 

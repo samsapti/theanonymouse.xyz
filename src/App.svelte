@@ -4,12 +4,12 @@
     import About from "./About.svelte";
 
     const name = "the_4n0nym0u53";
-    let currentTab: number;
 
+    let currentTab: string;
     let tabs = [
-        { label: "About", value: 1 },
-        { label: "Contact", value: 2 },
-        { label: "Privacy Policy", value: 3 },
+        { label: "About", href: "#about" },
+        { label: "Contact", href: "#contact" },
+        { label: "Privacy Policy", href: "#privacy" },
     ];
 </script>
 
@@ -18,15 +18,15 @@
 </header>
 
 <main>
-    {#if currentTab === 1}
+    {#if currentTab === tabs[0].href}
         <About {name} />
     {/if}
 
-    {#if currentTab === 2}
+    {#if currentTab === tabs[1].href}
         <h3>Tab 2 content</h3>
     {/if}
 
-    {#if currentTab === 3}
+    {#if currentTab === tabs[2].href}
         <h3>Tab 3 content</h3>
     {/if}
 </main>
