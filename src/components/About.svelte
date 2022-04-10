@@ -11,10 +11,21 @@
   </div>
   <div id="about-me">
     <h2>Who am I?</h2>
-    <ul>
-      <li>Software Development student</li>
-      <li>Privacy & Security Advocate</li>
-    </ul>
+    <p>
+      I'm a Software Development student from Denmark and a Privacy & Security
+      advocate. I fight for online privacy, and I support open source,
+      privacy-enhancing projects and software, and other tools to help people
+      evade surveillance capitalism on the internet.
+    </p>
+    <p>
+      I develop primarily Free/Libre & Open Source Software (FLOSS), and I also
+      frequently contribute to other FLOSS. You can see what I'm currently
+      working on over on my
+      <a href="https://github.com/theanonymousexyz">GitHub profile</a>.
+    </p>
+    <p>
+      For contact info, see the <a href="#contact">contact</a> page.
+    </p>
   </div>
 </div>
 
@@ -33,6 +44,11 @@
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+
+  a {
+    color: $accent3;
+    text-decoration: none;
   }
 
   img {
