@@ -1,0 +1,36 @@
+version: 2.1
+
+jobs:
+  build:
+    working_directory: ~/app
+    docker:
+      - image: node:17-alpine
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - persist_to_workspace:
+          root: ~/app
+          paths:
+            - ./dist
+
+  deploy:
+    working_directory: ~/app
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - attach_workspace:
+          at: ~/app
+      - run: scp -p ${SSH_PORT} -r dist/ ${SSH_USER}@${SSH_HOST}:website/
+
+workflows:
+  default:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - main
