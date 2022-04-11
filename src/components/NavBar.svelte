@@ -21,6 +21,7 @@
   onMount(() => {
     const mediaQuery = window.matchMedia("(max-width: 680px)");
     mediaQuery.addEventListener("change", mediaQueryHandler, true);
+    isMobile = mediaQuery.matches;
     handleTab();
   });
 </script>
