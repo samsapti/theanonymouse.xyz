@@ -108,8 +108,7 @@
       justify-content: space-between;
       background-color: $primary;
 
-      .here a,
-      .nav-item:hover {
+      .nav-item {
         width: calc(100vw - 48px);
       }
     }
