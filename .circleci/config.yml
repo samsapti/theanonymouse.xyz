@@ -21,7 +21,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/app
-      - run: scp -v -o "StrictHostKeyChecking no" -p ${SSH_PORT} -r dist ${SSH_USER}@${SSH_HOST}:website
+      - run: scp -o "StrictHostKeyChecking no" -P ${SSH_PORT} -r dist ${SSH_USER}@${SSH_HOST}:website
 
 workflows:
   default:
