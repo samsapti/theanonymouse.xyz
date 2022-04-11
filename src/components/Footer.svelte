@@ -34,7 +34,7 @@
 
   span {
     color: $white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     margin: 0.5em;
 
@@ -56,7 +56,7 @@
 
     span {
       margin: 0.2em;
-      font-size: 3.5vw;
+      font-size: 2.5vw;
     }
   }
 </style>

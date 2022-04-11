@@ -79,7 +79,7 @@
   h1 {
     color: $accent1;
     font-size: 3rem;
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
 
   .section {
@@ -87,12 +87,12 @@
 
     h2 {
       color: $accent2;
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 1rem auto;
     }
 
     p, span {
-      font-size: 1rem;
+      font-size: 1em;
     }
   }
 
@@ -103,7 +103,7 @@
     }
 
     img {
-      width: 50vw;
+      width: 40vw;
     }
 
     h1 {
@@ -112,7 +112,7 @@
 
     .section {
       h2 {
-        font-size: 8vw;
+        font-size: 6vw;
       }
 
       p, span {
