@@ -6,17 +6,14 @@
 <div>
   <span>
     Source code is available on
-    <a
-      target="_blank"
-      href="https://github.com/theanonymousexyz/theanonymouse.xyz"
-    >
+    <a href="https://github.com/theanonymousexyz/theanonymouse.xyz">
       GitHub
       <img src={github} alt="GitHub logo" />
     </a>
   </span>
   <span>
     Licensed under
-    <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       CC BY-NC-SA 4.0
       <img
         src={license}

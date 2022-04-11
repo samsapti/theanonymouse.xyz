@@ -5,13 +5,17 @@
   export let tabs = [];
   export let name: string;
 
+  // Reactively update URL hash
+  $: window.location.hash = currentTab;
+
   // Tab handler function
   function handleTab() {
     let hash = window.location.hash;
-    currentTab = hash.length === 0 ? tabs[0].href : hash;
+
+    if (tabs.some((t) => t.href === hash)) currentTab = hash;
+    else currentTab = tabs[0].href;
   }
 
-  // Set default tab to About page
   onMount(handleTab);
 </script>
 
@@ -63,8 +67,7 @@
       }
 
       .here a,
-      .nav-item:hover,
-      .nav-item:focus {
+      .nav-item:hover {
         background-color: $secondary;
         color: $black;
       }
