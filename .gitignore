@@ -8,8 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist/*
-!dist/pgp.asc
+dist
 dist-ssr
 *.local
 
