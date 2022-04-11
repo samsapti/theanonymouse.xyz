@@ -5,8 +5,6 @@
   export let currentTab: string;
   export let tabs = [];
 
-  $: window.location.hash = currentTab;
-
   let isMobile: boolean;
   let openMenu: boolean;
 
@@ -14,8 +12,9 @@
   const handleTab = () => {
     let hash = window.location.hash;
     if (openMenu) openMenu = false;
+
     if (tabs.some((t) => t.href === hash)) currentTab = hash;
-    else currentTab = tabs[0].href;
+    else currentTab = window.location.hash = tabs[0].href;
   };
 
   onMount(() => {
@@ -65,9 +64,10 @@
 
   #name {
     color: $white;
-    display: block;
+    display: inline-block;
     font-size: 24px;
     padding: 0 24px;
+    margin: auto 0;
   }
 
   nav {
@@ -116,17 +116,12 @@
 
   @media (max-width: 680px) {
     #content {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #name {
-      display: none;
+      align-items: flex-end;
     }
 
     nav {
-      flex-direction: column;
       align-items: flex-start;
+      justify-content: space-between;
     }
   }
 </style>
