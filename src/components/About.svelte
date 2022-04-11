@@ -43,7 +43,9 @@
         </span>
       </li>
     </ul>
-    <em>More services coming soon</em>
+    <span>
+      <em>More services coming soon</em>
+    </span>
   </div>
 </div>
 
@@ -89,8 +91,8 @@
       margin: 1rem auto;
     }
 
-    li, p {
-      font-size: 1.5rem;
+    p, span {
+      font-size: 1rem;
     }
   }
 
@@ -113,8 +115,8 @@
         font-size: 8vw;
       }
 
-      li, p {
-        font-size: 5vw;
+      p, span {
+        font-size: 3vw;
       }
     }
   }
