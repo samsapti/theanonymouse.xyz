@@ -2,7 +2,7 @@
 
 #### WIP
 
-This is the personal website of the_4n0nym0u53 at https://theanonymouse.xyz. Note that it is not deployed yet.
+This is the personal website of the_4n0nym0u53 at https://theanonymouse.xyz.
 
 ## License
 
