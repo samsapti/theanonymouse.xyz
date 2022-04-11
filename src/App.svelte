@@ -1,6 +1,6 @@
 <script lang="ts">
   import About from "./components/About.svelte";
-  import InfoBar from "./components/InfoBar.svelte";
+  import Footer from "./components/Footer.svelte";
   import NavBar from "./components/NavBar.svelte";
 
   let currentTab: string;
@@ -10,17 +10,15 @@
     { label: "Privacy Policy", href: "#privacy" },
     { label: "SearX", href: "https://searx.theanonymouse.xyz" },
   ];
-
-  const name = "the_4n0nym0u53";
 </script>
 
 <div id="content">
   <header>
-    <NavBar bind:currentTab {tabs} {name} />
+    <NavBar bind:currentTab {tabs} />
   </header>
   <main>
     {#if currentTab === tabs[0].href}
-      <About {name} />
+      <About />
     {:else if currentTab === tabs[1].href}
       <h3>No content yet!</h3>
     {:else if currentTab === tabs[2].href}
@@ -28,7 +26,7 @@
     {/if}
   </main>
   <footer>
-    <InfoBar />
+    <Footer />
   </footer>
 </div>
 
@@ -52,7 +50,8 @@
     justify-content: space-between;
   }
 
-  header, footer {
+  header,
+  footer {
     width: 100%;
     margin: 0;
   }

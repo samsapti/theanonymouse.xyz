@@ -1,13 +1,11 @@
 <script lang="ts">
   import src from "../assets/profile.png";
-
-  export let name: string;
 </script>
 
 <div id="content">
   <div id="profile">
-    <img {src} alt="{name} profile" />
-    <h1>Hello from {name}!</h1>
+    <img {src} alt="the_4n0nym0u53 profile" />
+    <h1>Hello from the_4n0nym0u53!</h1>
   </div>
   <div class="section">
     <h2>Who am I?</h2>
@@ -53,11 +51,10 @@
   @import "../scss/colorscheme.scss";
 
   #content {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    padding: 0 15%;
   }
 
   #profile {
@@ -72,8 +69,7 @@
   }
 
   img {
-    height: 16rem;
-    width: 16rem;
+    max-width: 14rem;
     border-radius: 50%;
     background-color: $secondary;
   }
@@ -89,8 +85,37 @@
 
     h2 {
       color: $accent2;
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin: 1rem auto;
+    }
+
+    li, p {
+      font-size: 1.5rem;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 480px) {
+    #content {
+      padding: 0 5%;
+    }
+
+    img {
+      width: 50vw;
+    }
+
+    h1 {
+      font-size: 10vw;
+    }
+
+    .section {
+      h2 {
+        font-size: 8vw;
+      }
+
+      li, p {
+        font-size: 5vw;
+      }
     }
   }
 </style>

@@ -3,7 +3,7 @@
   import license from "../assets/cc-logo.svg";
 </script>
 
-<div>
+<div id="content">
   <span>
     Source code is available on
     <a href="https://github.com/theanonymousexyz/theanonymouse.xyz">
@@ -26,7 +26,7 @@
 <style lang="scss">
   @import "../scss/colorscheme.scss";
 
-  div {
+  #content {
     background-color: $primary;
     display: flex;
     justify-content: center;
@@ -35,6 +35,7 @@
   span {
     color: $white;
     font-size: 1rem;
+    text-align: center;
     margin: 0.5em;
 
     a {
@@ -44,6 +45,18 @@
 
     img {
       height: 1em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    span {
+      margin: 0.2em;
+      font-size: 3.5vw;
     }
   }
 </style>
