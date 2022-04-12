@@ -30,7 +30,7 @@
   <nav>
     {#if isMobile}
       <div id="mobile-icon">
-        <Hamburger bind:open={openMenu} --color="whitesmoke" />
+        <Hamburger bind:open={openMenu} --color="white" />
       </div>
     {/if}
     <a id="name" href="/">the_4n0nym0u53</a>

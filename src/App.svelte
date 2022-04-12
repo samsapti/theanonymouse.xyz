@@ -1,5 +1,7 @@
 <script lang="ts">
-  import About from "./components/About.svelte";
+  import About from "./pages/About.svelte";
+  import Contact from "./pages/Contact.svelte";
+
   import Footer from "./components/Footer.svelte";
   import NavBar from "./components/NavBar.svelte";
 
@@ -20,7 +22,7 @@
     {#if currentTab === tabs[0].href}
       <About />
     {:else if currentTab === tabs[1].href}
-      <h3>No content yet!</h3>
+      <Contact />
     {:else if currentTab === tabs[2].href}
       <h3>No content yet!</h3>
     {/if}

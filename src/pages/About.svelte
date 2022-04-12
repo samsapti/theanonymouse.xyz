@@ -91,7 +91,8 @@
       margin: 1rem auto;
     }
 
-    p, span {
+    p,
+    span {
       font-size: 1em;
     }
   }
@@ -115,7 +116,8 @@
         font-size: 6vw;
       }
 
-      p, span {
+      p,
+      span {
         font-size: 3vw;
       }
     }
