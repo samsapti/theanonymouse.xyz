@@ -12,6 +12,19 @@
           Email:
           <a href="mailto:hello@theanonymouse.xyz">hello@theanonymouse.xyz</a>
         </span>
+        <ul>
+          <li>
+            <span>
+              PGP key:
+              <a href="/pgp.asc">Here</a>
+              ,
+              <a href="https://github.com/theanonymousexyz/pgp-public-key">
+                here
+              </a>
+              or on your preffered keyserver
+            </span>
+          </li>
+        </ul>
       </li>
       <li>
         <span>
