@@ -16,8 +16,7 @@
           <li>
             <span>
               PGP key:
-              <a href="/pgp.asc">Here</a>
-              ,
+              <a href="/pgp.asc">Here</a>,
               <a href="https://github.com/theanonymousexyz/pgp-public-key">
                 here
               </a>
