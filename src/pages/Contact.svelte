@@ -20,7 +20,7 @@
               <a href="https://github.com/theanonymousexyz/pgp-public-key">
                 here
               </a>
-              or on your preffered keyserver
+              or on your preferred keyserver
             </span>
           </li>
         </ul>
