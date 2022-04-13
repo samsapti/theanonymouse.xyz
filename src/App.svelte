@@ -33,9 +33,6 @@
   </footer>
 </div>
 
-<!-- svelte-ignore a11y-missing-content -->
-<a rel="me" href="https://freeradical.zone/@the_4n0nym0u53" />
-
 <style lang="scss">
   @import "./scss/colorscheme.scss";
 
