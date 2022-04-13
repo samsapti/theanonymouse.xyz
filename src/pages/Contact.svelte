@@ -25,7 +25,7 @@
       <li>
         <span>
           Mastodon:
-          <a href="https://freeradical.zone/@the_4n0nym0u53">
+          <a rel="me" href="https://freeradical.zone/@the_4n0nym0u53">
             @the_4n0nym0u53@freeradical.zone
           </a>
         </span>
@@ -104,7 +104,7 @@
 
     .section {
       width: 80vw;
-      
+
       h2 {
         font-size: 6vw;
       }
