@@ -7,11 +7,7 @@
     <h3>For how long is it kept?</h3>
     <p>No data is kept.</p>
     <h3>What about embedded content?</h3>
-    <span>
-      Currently only one image is sourced from
-      <a href="https://fsf.org">fsf.org</a>. Please read their privacy policy if
-      this is something that concerns you.
-    </span>
+    <p>There is no embedded content.</p>
   </div>
   <div class="section">
     <h2>SearX</h2>
