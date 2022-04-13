@@ -1,5 +1,5 @@
 <script lang="ts">
-  import src from "../assets/no-facebook-me.png";
+  import src from "../assets/not-fd.svg";
 </script>
 
 <div id="content">
