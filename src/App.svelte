@@ -1,6 +1,7 @@
 <script lang="ts">
   import About from "./pages/About.svelte";
   import Contact from "./pages/Contact.svelte";
+  import PrivacyPolicy from "./pages/PrivacyPolicy.svelte";
 
   import Footer from "./components/Footer.svelte";
   import NavBar from "./components/NavBar.svelte";
@@ -24,7 +25,7 @@
     {:else if currentTab === tabs[1].href}
       <Contact />
     {:else if currentTab === tabs[2].href}
-      <h3>No content yet!</h3>
+      <PrivacyPolicy />
     {/if}
   </main>
   <footer>

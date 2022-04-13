@@ -42,6 +42,13 @@
           (use one of the direct contact methods)
         </span>
       </li>
+      <li>
+        <span>
+          A
+          <a href="https://mirror.theanonymouse.xyz/artix-linux/">mirror</a>
+          for Artix Linux repository packages (it is in their mirrorlist)
+        </span>
+      </li>
     </ul>
     <span>
       <em>More services coming soon</em>
@@ -112,6 +119,8 @@
     }
 
     .section {
+      width: 80vw;
+      
       h2 {
         font-size: 6vw;
       }

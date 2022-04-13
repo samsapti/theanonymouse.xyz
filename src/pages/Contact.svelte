@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <div id="content">
   <h1>Contact information</h1>
   <div class="section">
@@ -106,6 +103,8 @@
     }
 
     .section {
+      width: 80vw;
+      
       h2 {
         font-size: 6vw;
       }
