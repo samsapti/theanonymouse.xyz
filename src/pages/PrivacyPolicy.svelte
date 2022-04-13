@@ -30,11 +30,6 @@
     padding: 0 15%;
   }
 
-  a {
-    color: $accent3;
-    text-decoration: none;
-  }
-
   h1 {
     color: $accent1;
     font-size: 3rem;
@@ -50,8 +45,7 @@
       margin: 1rem auto;
     }
 
-    p,
-    span {
+    p {
       font-size: 1em;
     }
   }
@@ -73,8 +67,7 @@
         font-size: 6vw;
       }
 
-      p,
-      span {
+      p {
         font-size: 3vw;
       }
     }
