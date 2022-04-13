@@ -1,3 +1,7 @@
+<script lang="ts">
+  import src from "../assets/no-facebook-me.png";
+</script>
+
 <div id="content">
   <h1>Contact information</h1>
   <div class="section">
@@ -44,10 +48,7 @@
     <h2>Social media</h2>
     <p>I don't use that sh*t.</p>
     <a href="https://www.fsf.org/fb">
-      <img
-        src="https://static.fsf.org/nosvn/no-facebook-me.png"
-        alt="Not f'd — you won't find me on Facebook"
-      />
+      <img {src} alt="Not f'd — you won't find me on Facebook" />
     </a>
   </div>
 </div>
