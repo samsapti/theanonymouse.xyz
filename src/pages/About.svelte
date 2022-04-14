@@ -50,9 +50,9 @@
         </span>
       </li>
     </ul>
-    <span>
+    <p>
       <em>More services coming soon</em>
-    </span>
+    </p>
   </div>
 </div>
 

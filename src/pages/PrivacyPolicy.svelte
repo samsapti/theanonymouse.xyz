@@ -1,23 +1,44 @@
 <div id="content">
   <h1>Privacy Policy</h1>
+  <p class="note">
+    <em>
+      This privacy policy applies to this website, as well as any of the public
+      services mention in the
+      <a href="#about">about page</a>.
+    </em>
+  </p>
   <div class="section">
-    <h2>On this website</h2>
-    <h3>What data is collected?</h3>
-    <p>Absolutely nothing.</p>
-    <h3>For how long is it kept?</h3>
-    <p>No data is kept.</p>
-    <h3>What about embedded content?</h3>
-    <p>There is no embedded content.</p>
+    <h2>Collected data and retention</h2>
+    <p>
+      Absolutely no data is collected. Even the logs on the webserver are
+      discarded, meaning no IP addresses, no timestamps, no nothing.
+    </p>
+    <p>
+      Regarding SearX, keep in mind that it is a metasearch engine (meaning it
+      sends your search query to other search engines and gets results from
+      them), so I am not responsible for what the upstream search engines store
+      in terms of search queries, timestamps, etc.
+    </p>
   </div>
   <div class="section">
-    <h2>SearX</h2>
-    <h3>What data is collected?</h3>
-    <p>Absolutely nothing.</p>
-    <h3>For how long is it kept?</h3>
-    <p>No data is kept.</p>
-    <h3>What about embedded content?</h3>
-    <p>There is no embedded content.</p>
+    <h2>Embedded content and third party tracking</h2>
+    <p>There is no embedded content on this website.</p>
+    <p>
+      On SearX, search results are filtered and sanitized for tracking content
+      with a piece of software called
+      <a href="https://github.com/asciimoo/morty">Morty</a>. In short, I use the
+      default settings in the
+      <a href="https://github.com/searx/searx-docker">SearX Docker setup</a>,
+      which are optimized for privacy by default.
+    </p>
   </div>
+  <div class="section">
+    <h2>Cookies, analytics, etc.</h2>
+    <p>None of that is used here. After all, I am here to promote privacy.</p>
+  </div>
+  <p class="note">
+    <em>This privacy policy was last updated on April 14th, 2022.</em>
+  </p>
 </div>
 
 <style lang="scss">
@@ -30,10 +51,23 @@
     padding: 0 15%;
   }
 
+  .note {
+    margin: 20px 0;
+  }
+
+  a {
+    color: $accent3;
+    text-decoration: none;
+  }
+
   h1 {
     color: $accent1;
     font-size: 3rem;
     margin: 2rem auto;
+  }
+
+  p {
+    font-size: 1em;
   }
 
   .section {
@@ -43,10 +77,6 @@
       color: $accent2;
       font-size: 2rem;
       margin: 1rem auto;
-    }
-
-    p {
-      font-size: 1em;
     }
   }
 
@@ -60,15 +90,15 @@
       font-size: 10vw;
     }
 
+    p {
+      font-size: 3vw;
+    }
+
     .section {
       width: 80vw;
-      
+
       h2 {
         font-size: 6vw;
-      }
-
-      p {
-        font-size: 3vw;
       }
     }
   }
