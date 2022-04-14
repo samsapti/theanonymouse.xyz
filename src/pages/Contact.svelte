@@ -29,8 +29,8 @@
       <li>
         <span>
           Mastodon:
-          <a href="https://freeradical.zone/@the_4n0nym0u53">
-            @the_4n0nym0u53@freeradical.zone
+          <a rel="me" href="https://ruby.social/@theanonymousexyz">
+            @theanonymousexyz@ruby.social
           </a>
         </span>
       </li>
