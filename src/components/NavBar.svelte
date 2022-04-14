@@ -151,7 +151,7 @@
       border: 3px solid $accent1;
       border-radius: 50%;
       color: $accent2;
-      font-size: 16px;
+      font-size: 12px;
       height: 32px;
       width: 32px;
       cursor: pointer;
@@ -165,7 +165,7 @@
       height: auto;
 
       button {
-        font-size: 18px;
+        font-size: 14px;
         height: 38px;
         width: 38px;
       }
