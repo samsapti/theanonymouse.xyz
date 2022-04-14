@@ -32,6 +32,8 @@
     <Footer />
   </footer>
 </div>
+<!-- svelte-ignore a11y-missing-content -->
+<a rel="me" href="https://ruby.social/@theanonymousexyz" />
 
 <style lang="scss">
   @import "./scss/colorscheme.scss";
