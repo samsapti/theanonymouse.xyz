@@ -63,7 +63,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 15%;
+    margin: 0;
+    padding: 0;
   }
 
   #profile {
@@ -91,6 +92,8 @@
 
   .section {
     line-height: 1.5;
+    width: 80vw;
+    max-width: 720px;
 
     h2 {
       color: $accent2;
@@ -119,8 +122,6 @@
     }
 
     .section {
-      width: 80vw;
-
       h2 {
         font-size: 6vw;
       }

@@ -59,7 +59,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 15%;
+    margin: 0;
+    padding: 0;
   }
 
   .note {
@@ -83,6 +84,8 @@
 
   .section {
     line-height: 1.5;
+    width: 80vw;
+    max-width: 720px;
 
     h2 {
       color: $accent2;
@@ -94,7 +97,7 @@
   // Responsive
   @media (max-width: 480px) {
     #content {
-      padding: 0 5%;
+      padding: 0;
     }
 
     h1 {
@@ -105,12 +108,8 @@
       font-size: 3vw;
     }
 
-    .section {
-      width: 80vw;
-
-      h2 {
-        font-size: 6vw;
-      }
+    .section h2 {
+      font-size: 6vw;
     }
   }
 </style>

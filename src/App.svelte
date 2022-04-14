@@ -2,11 +2,11 @@
   import About from "./pages/About.svelte";
   import Contact from "./pages/Contact.svelte";
   import PrivacyPolicy from "./pages/PrivacyPolicy.svelte";
-
   import Footer from "./components/Footer.svelte";
   import NavBar from "./components/NavBar.svelte";
 
   let currentTab: string;
+  let isDark: boolean;
   let tabs = [
     { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
@@ -15,9 +15,9 @@
   ];
 </script>
 
-<div id="content">
+<div id="content" class:dark={isDark}>
   <header>
-    <NavBar bind:currentTab {tabs} />
+    <NavBar bind:currentTab bind:isDark {tabs} />
   </header>
   <main>
     {#if currentTab === tabs[0].href}
@@ -39,12 +39,11 @@
   :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-    background-color: var(--background);
-    color: var(--text);
   }
 
   #content {
+    background-color: $bg-light;
+    color: $black;
     margin: 0;
     padding: 0;
     display: flex;
@@ -53,14 +52,21 @@
     justify-content: space-between;
   }
 
+  #content.dark {
+    background-color: $bg-dark;
+    color: $white;
+  }
+
   header,
   footer {
     width: 100%;
     margin: 0;
+    padding: 0;
   }
 
   main {
-    padding: 5em;
+    padding: 6em;
+    margin: 0;
     display: flex;
     justify-content: center;
   }

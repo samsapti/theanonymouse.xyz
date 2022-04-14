@@ -60,12 +60,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 15%;
+    margin: 0;
+    padding: 0;
   }
 
   a {
     color: $accent3;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    max-width: 80vw;
+    margin: 0;
+    padding: 0;
   }
 
   h1 {
@@ -74,18 +83,20 @@
     margin: 2rem auto;
   }
 
+  p,
+  span {
+    font-size: 1em;
+  }
+
   .section {
     line-height: 1.5;
+    width: fit-content;
+    max-width: 720px;
 
     h2 {
       color: $accent2;
       font-size: 2rem;
       margin: 1rem auto;
-    }
-
-    p,
-    span {
-      font-size: 1em;
     }
   }
 
@@ -97,10 +108,16 @@
 
     img {
       width: 80vw;
+      max-width: 720px;
     }
 
     h1 {
       font-size: 10vw;
+    }
+
+    p,
+    span {
+      font-size: 3vw;
     }
 
     .section {
@@ -108,11 +125,6 @@
 
       h2 {
         font-size: 6vw;
-      }
-
-      p,
-      span {
-        font-size: 3vw;
       }
     }
   }

@@ -1,26 +1,52 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import { Hamburger } from "svelte-hamburgers";
+  import { onMount } from "svelte";
+  import Icon from "@iconify/svelte";
+  import sunIcon from "@iconify/icons-fa-solid/sun";
+  import moonIcon from "@iconify/icons-bi/moon-stars-fill";
 
   export let currentTab: string;
+  export let isDark: boolean;
   export let tabs = [];
 
   let isMobile: boolean;
   let openMenu: boolean;
 
-  const mediaQueryHandler = (e: MediaQueryListEvent) => (isMobile = e.matches);
-  const handleTab = () => {
-    let hash = window.location.hash;
+  // Set chosen or default tab
+  function handleTab() {
+    let hash = location.hash;
     if (openMenu) openMenu = false;
 
     if (tabs.some((t) => t.href === hash)) currentTab = hash;
-    else currentTab = window.location.hash = tabs[0].href;
-  };
+    else currentTab = location.hash = tabs[0].href;
+  }
 
+  // Get dark theme
+  function getDark() {
+    let dark = localStorage.getItem("dark");
+    if (dark != null) return dark == "true";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  // Toggle theme
+  function toggleTheme() {
+    isDark = !isDark;
+    localStorage.setItem("dark", `${isDark}`);
+  }
+
+  // Code to run when navbar loads
   onMount(() => {
-    const mediaQuery = window.matchMedia("(max-width: 680px)");
-    mediaQuery.addEventListener("change", mediaQueryHandler, true);
-    isMobile = mediaQuery.matches;
+    // Responsive design
+    const responsiveQuery = window.matchMedia("(min-width: 720px)");
+    responsiveQuery.addEventListener("change", (e) => (isMobile = !e.matches));
+    isMobile = !responsiveQuery.matches;
+
+    // Set theme
+    const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    themeQuery.addEventListener("change", () => (isDark = getDark()));
+    isDark = getDark();
+
+    // Set tab
     handleTab();
   });
 </script>
@@ -32,8 +58,9 @@
       <div id="mobile-icon">
         <Hamburger bind:open={openMenu} --color="white" />
       </div>
+    {:else}
+      <a id="name" href="/">the_4n0nym0u53</a>
     {/if}
-    <a id="name" href="/">the_4n0nym0u53</a>
     {#if !isMobile || openMenu}
       <ul id="nav-list" class:mobile={isMobile}>
         {#each tabs as { href, label }}
@@ -45,6 +72,12 @@
         {/each}
       </ul>
     {/if}
+    <button
+      title="Switch to {isDark ? 'light' : 'dark'} theme"
+      on:click={toggleTheme}
+    >
+      <Icon id="icon" icon={isDark ? sunIcon : moonIcon} inline={true} />
+    </button>
   </nav>
 </div>
 
@@ -65,7 +98,7 @@
   #name {
     color: $white;
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 24px;
     margin: auto 0;
   }
@@ -73,7 +106,7 @@
   nav {
     background-color: $primary;
     display: flex;
-    align-items: center;
+    height: 58px;
 
     #mobile-icon {
       cursor: pointer;
@@ -86,17 +119,6 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-    }
-
-    .nav-item {
-      padding: 24px;
-      display: inline-flex;
-    }
-
-    .here a,
-    .nav-item:hover {
-      background-color: $secondary;
-      color: $black;
     }
 
     #nav-list.mobile {
@@ -112,16 +134,41 @@
         width: calc(100vw - 48px);
       }
     }
-  }
 
-  @media (max-width: 680px) {
-    #content {
-      align-items: flex-end;
+    .nav-item {
+      padding: 24px;
+      display: inline-flex;
     }
 
+    .here a,
+    .nav-item:hover {
+      background-color: $secondary;
+      color: $black;
+    }
+
+    button {
+      background-color: $black;
+      border: 3px solid $accent1;
+      border-radius: 50%;
+      color: $accent2;
+      font-size: 16px;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      margin: auto;
+      margin-right: 2vh;
+    }
+  }
+
+  @media (min-width: 720px) {
     nav {
-      align-items: flex-start;
-      justify-content: space-between;
+      height: auto;
+
+      button {
+        font-size: 18px;
+        height: 38px;
+        width: 38px;
+      }
     }
   }
 </style>
