@@ -8,16 +8,16 @@
     <h1>Hello from the_4n0nym0u53!</h1>
   </div>
   <div class="section">
-    <h2>Who am I?</h2>
+    <h2>Who I am</h2>
     <p>
-      I'm a Software Development student from Denmark and a Privacy & Security
-      advocate. I fight for online privacy, and I support open source,
-      privacy-enhancing projects and software, and other tools to help people
-      evade surveillance capitalism on the internet.
+      I am a Software Development student from Denmark and a privacy & security
+      advocate. I fight for online privacy, and I support open source, privacy
+      enhancing projects, and other tools to help people fight surveillance
+      capitalism on the internet.
     </p>
   </div>
   <div class="section">
-    <h2>What do I do?</h2>
+    <h2>What I do</h2>
     <p>
       I develop primarily Free/Libre & Open Source Software (FLOSS), and I also
       frequently contribute to other FLOSS projects. You can see what I'm
@@ -26,7 +26,7 @@
     </p>
   </div>
   <div class="section">
-    <h2>Services I offer</h2>
+    <h2>Public services</h2>
     <p>I have the following services available for public usage:</p>
     <ul>
       <li>
@@ -120,7 +120,7 @@
 
     .section {
       width: 80vw;
-      
+
       h2 {
         font-size: 6vw;
       }

@@ -29,12 +29,23 @@
       <a href="https://github.com/asciimoo/morty">Morty</a>. In short, I use the
       default settings in the
       <a href="https://github.com/searx/searx-docker">SearX Docker setup</a>,
-      which are optimized for privacy by default.
+      which are optimized for privacy.
     </p>
   </div>
   <div class="section">
     <h2>Cookies, analytics, etc.</h2>
     <p>None of that is used here. After all, I am here to promote privacy.</p>
+  </div>
+  <div class="section">
+    <h2>Changes to this privacy policy</h2>
+    <p>
+      I reserve the right to update this privacy policy as needed, at any given
+      time. By browsing my website and using my services, you agree with the
+      version of this privacy policy at that given time. As I store no
+      information about the users of this site and my services, I am also unable
+      to notify the users directly of any changes. The date at the bottom will
+      always reflect the last date this privacy policy was updated.
+    </p>
   </div>
   <p class="note">
     <em>This privacy policy was last updated on April 14th, 2022.</em>
