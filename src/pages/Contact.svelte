@@ -29,7 +29,7 @@
       <li>
         <span>
           Mastodon:
-          <a rel="me" href="https://ruby.social/@theanonymousexyz">
+          <a href="https://ruby.social/@theanonymousexyz">
             @theanonymousexyz@ruby.social
           </a>
         </span>
