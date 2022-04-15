@@ -79,11 +79,9 @@
     </p>
     <p>
       If this privacy policy changes substantially, I will put a clear banner on
-      the front page for a period of at least 30 days.
-    </p>
-    <p>
-      The date at the bottom will always reflect the last date this privacy
-      policy was updated.
+      the front page for a period of at least 30 days. Furthermore, the date at
+      the bottom will always reflect the last date this privacy policy was
+      updated.
     </p>
   </div>
   <p class="note">
