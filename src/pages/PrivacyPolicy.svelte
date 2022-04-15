@@ -8,7 +8,7 @@
     </em>
   </p>
   <div class="section">
-    <h2>Collected data and retention</h2>
+    <h2>Data collection and retention</h2>
     <p>
       Absolutely no data is collected. Even the logs on the webserver are
       discarded, meaning no IP addresses, no timestamps, no nothing.
@@ -43,8 +43,8 @@
       time. By browsing my website and using my services, you agree with the
       version of this privacy policy at that given time. As I store no
       information about the users of this site and my services, I am also unable
-      to notify the users directly of any changes. The date at the bottom will
-      always reflect the last date this privacy policy was updated.
+      to notify you directly of any changes. The date at the bottom will always
+      reflect the last date this privacy policy was updated.
     </p>
   </div>
   <p class="note">
