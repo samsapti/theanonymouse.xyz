@@ -41,10 +41,10 @@
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
-  :global(body) {
+  :global(body),
+  :global(html) {
     margin: 0;
     padding: 0;
-    width: 100%;
   }
 
   #content {
