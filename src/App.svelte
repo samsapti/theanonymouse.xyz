@@ -32,8 +32,6 @@
     <Footer />
   </footer>
 </div>
-<!-- svelte-ignore a11y-missing-content -->
-<a rel="me" href="https://ruby.social/@theanonymousexyz" />
 
 <style lang="scss">
   @import "./scss/colorscheme.scss";
@@ -41,6 +39,12 @@
   :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   #content {
