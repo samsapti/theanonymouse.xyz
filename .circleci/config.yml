@@ -21,6 +21,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/app
+      - run: ssh -o "StrictHostKeyChecking no" -p ${SSH_PORT} ${SSH_USER}@${SSH_HOST} "rm -rf ~/website/dist/assets"
       - run: scp -o "StrictHostKeyChecking no" -P ${SSH_PORT} -r dist ${SSH_USER}@${SSH_HOST}:website
 
 workflows:
