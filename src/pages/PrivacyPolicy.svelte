@@ -48,7 +48,7 @@
     </p>
   </div>
   <p class="note">
-    <em>This privacy policy was last updated on April 14, 2022.</em>
+    <em>This privacy policy was last updated on April 15, 2022.</em>
   </p>
 </div>
 
