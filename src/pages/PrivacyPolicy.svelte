@@ -11,13 +11,34 @@
     <h2>Data collection and retention</h2>
     <p>
       Absolutely no data is collected. Even the logs on the webserver are
-      discarded, meaning no IP addresses, no timestamps, no nothing.
+      discarded immediately, meaning no IP addresses, no timestamps, no nothing.
+    </p>
+    <p>
+      The hosting provider of this website is
+      <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>. According to
+      their privacy policy, they do not store any log data about what is sent
+      and received to/from the server hosting this site. The only thing that
+      displayed to the server administrator (me) is general metrics, such as
+      overall time-based usage of memory, processing power, network bandwidth,
+      etc. This is strictly non-identifiable information. Please refer to their
+      privacy policy if this concerns you.
+    </p>
+    <p>
+      Furthermore, this website and the public services are hosted in Germany.
+      This means that all data regarding the site and services are stored inside
+      the EU with an EU-based hosting provider. Therefore, the
+      <a href="https://www.nsa.gov/Signals-Intelligence/FISA/">
+        Foreign Intelligence Surveillance Act (FISA)
+      </a>
+      does not apply to this website and the public services.
     </p>
     <p>
       Regarding SearX, keep in mind that it is a metasearch engine (meaning it
       sends your search query to other search engines and gets results from
       them), so I am not responsible for what the upstream search engines store
-      in terms of search queries, timestamps, etc.
+      in terms of search queries, timestamps, etc. You can see the enabled
+      search engines in the settings, and optionally change them. Please refer
+      to their individual privacy policies.
     </p>
   </div>
   <div class="section">
@@ -34,17 +55,32 @@
   </div>
   <div class="section">
     <h2>Cookies, analytics, etc.</h2>
-    <p>None of that is used here. After all, I am here to promote privacy.</p>
+    <p>None of that is used here.</p>
+    <p>
+      The only exception is that your color theme preference is stored in your
+      browser's local storage if you change it from the default. This might
+      confusingly be shown to you as "Cookies" in your browser, but it is not.
+      It should also be mentioned, that this is not required for the website to
+      function, but it is required to persist your color theme preference.
+    </p>
+    <p>
+      SearX might also store some cookies, but only if you change the settings
+      from the default. These are strictly used to store settings, and are also
+      not required. SearX settings can also be stored in a custom URL if you
+      prefer.
+    </p>
   </div>
   <div class="section">
     <h2>Changes to this privacy policy</h2>
     <p>
       I reserve the right to update this privacy policy as needed, at any given
       time. By browsing my website and using my services, you agree with the
-      version of this privacy policy at that given time. As I store no
-      information about the users of this site and my services, I am also unable
-      to notify you directly of any changes. The date at the bottom will always
-      reflect the last date this privacy policy was updated.
+      version of this privacy policy at that given time. The date at the bottom
+      will always reflect the last date this privacy policy was updated.
+    </p>
+    <p>
+      If this privacy policy changes substantially, I will put a clear banner on
+      the front page for a period of at least 30 days.
     </p>
   </div>
   <p class="note">
