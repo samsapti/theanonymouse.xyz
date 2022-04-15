@@ -43,6 +43,22 @@
         </span>
       </li>
     </ul>
+    <p>
+      If you want to contact me securely, either use email with PGP encryption
+      or Matrix. If you use Matrix, please verify my sessions:
+    </p>
+    <ul>
+      <li>
+        <span>
+          SchildiChat Desktop (Linux) - Session ID: <code>LVHNZUZIRO</code>
+        </span>
+      </li>
+      <li>
+        <span>
+          SchildiChat Android - Session ID: <code>WWSKTPLQCN</code>
+        </span>
+      </li>
+    </ul>
   </div>
   <div class="section">
     <h2>Social media</h2>
@@ -72,7 +88,7 @@
   }
 
   img {
-    max-width: 80vw;
+    max-width: 720px;
     margin: 0;
     padding: 0;
   }
@@ -84,8 +100,16 @@
   }
 
   p,
+  code,
   span {
     font-size: 1em;
+  }
+
+  code {
+    background-color: $accent3;
+    border-radius: 3px;
+    font-family: "Fira Code", "Roboto Mono", Consolas, monospace;
+    padding: 0 3px;
   }
 
   .section {
