@@ -14,10 +14,10 @@
       discarded immediately, meaning no IP addresses, no timestamps, no nothing.
     </p>
     <p>
-      The hosting provider of this website is
+      The hosting provider of this website and the public services is
       <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>. According to
       their privacy policy, they do not store any log data about what is sent
-      and received to/from the server hosting this site. The only thing that
+      and received to/from the server hosting this site. The only thing that is
       displayed to the server administrator (me) is general metrics, such as
       overall time-based usage of memory, processing power, network bandwidth,
       etc. This is strictly non-identifiable information. Please refer to their
@@ -75,16 +75,19 @@
     <p>
       I reserve the right to update this privacy policy as needed, at any given
       time. By browsing my website and using my services, you agree with the
-      version of this privacy policy at that given time. The date at the bottom
-      will always reflect the last date this privacy policy was updated.
+      version of this privacy policy in effect at that given time.
     </p>
     <p>
       If this privacy policy changes substantially, I will put a clear banner on
       the front page for a period of at least 30 days.
     </p>
+    <p>
+      The date at the bottom will always reflect the last date this privacy
+      policy was updated.
+    </p>
   </div>
   <p class="note">
-    <em>This privacy policy was last updated on April 15, 2022.</em>
+    <em>This privacy policy was last updated on April 15th, 2022.</em>
   </p>
 </div>
 
