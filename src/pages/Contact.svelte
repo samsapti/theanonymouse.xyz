@@ -88,9 +88,11 @@
   }
 
   img {
-    max-width: 720px;
-    margin: 0;
-    padding: 0;
+    display: block;
+    width: 50%;
+    max-width: 250px;
+    margin: 50px 0 auto auto;
+    margin-right: 0;
   }
 
   h1 {
@@ -114,7 +116,6 @@
 
   .section {
     line-height: 1.5;
-    width: fit-content;
     max-width: 720px;
 
     h2 {
@@ -128,11 +129,6 @@
   @media (max-width: 480px) {
     #content {
       padding: 0 5%;
-    }
-
-    img {
-      width: 80vw;
-      max-width: 720px;
     }
 
     h1 {
