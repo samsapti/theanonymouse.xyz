@@ -1,9 +1,8 @@
 <script lang="ts">
   import { Hamburger } from "svelte-hamburgers";
   import { onMount } from "svelte";
-  import Icon from "@iconify/svelte";
-  import sunIcon from "@iconify/icons-fa-solid/sun";
-  import moonIcon from "@iconify/icons-bi/moon-stars-fill";
+  import SunIcon from "@inqling/svelte-icons/solid/sun.svelte";
+  import MoonIcon from "@inqling/svelte-icons/solid/moon.svelte";
 
   export let currentTab: string;
   export let isDark: boolean;
@@ -76,7 +75,11 @@
       title="Switch to {isDark ? 'light' : 'dark'} theme"
       on:click={toggleTheme}
     >
-      <Icon id="icon" icon={isDark ? sunIcon : moonIcon} inline={true} />
+      {#if isDark}
+        <SunIcon id="icon" />
+      {:else}
+        <MoonIcon id="icon" />
+      {/if}
     </button>
   </nav>
 </div>
@@ -148,15 +151,15 @@
 
     button {
       background-color: $black;
+      color: $accent2;
       border: 3px solid $accent1;
       border-radius: 50%;
-      color: $accent2;
-      font-size: 12px;
       height: 32px;
       width: 32px;
-      cursor: pointer;
       margin: auto;
       margin-right: 2vh;
+      padding: 3px;
+      cursor: pointer;
     }
   }
 
@@ -165,7 +168,6 @@
       height: auto;
 
       button {
-        font-size: 14px;
         height: 38px;
         width: 38px;
       }
