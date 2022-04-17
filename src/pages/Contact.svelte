@@ -50,12 +50,12 @@
     <ul>
       <li>
         <span>
-          SchildiChat Desktop (Linux) - Session ID: <code>LVHNZUZIRO</code>
+          SchildiChat Desktop (Linux) - <code>LVHNZUZIRO</code>
         </span>
       </li>
       <li>
         <span>
-          SchildiChat Android - Session ID: <code>WWSKTPLQCN</code>
+          SchildiChat Android - <code>WWSKTPLQCN</code>
         </span>
       </li>
     </ul>
