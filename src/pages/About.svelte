@@ -11,9 +11,9 @@
     <h2>Who I am</h2>
     <p>
       I am a Software Development student from Denmark and a privacy & security
-      advocate. I fight for online privacy, and I support open source, privacy
-      enhancing projects, and other tools to help people fight surveillance
-      capitalism on the internet.
+      advocate. I fight for online privacy, and I support privacy enhancing
+      projects and tools that help people stand against surveillance capitalism
+      on the internet.
     </p>
   </div>
   <div class="section">
