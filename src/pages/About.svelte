@@ -22,9 +22,9 @@
       I develop primarily Free/Libre & Open Source Software (FLOSS), and I also
       frequently contribute to other FLOSS projects. You can see what I'm
       currently working on over on my
-      <a rel="noopener noreferrer" href="https://github.com/theanonymousexyz">
-        GitHub profile
-      </a>.
+      <a rel="noopener noreferrer" href="https://github.com/theanonymousexyz"
+        >GitHub profile</a
+      >.
     </p>
   </div>
   <div class="section">
