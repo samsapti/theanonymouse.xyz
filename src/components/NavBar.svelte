@@ -1,8 +1,7 @@
 <script lang="ts">
+  import ThemeSwitcher from "./ThemeSwitcher.svelte";
   import { Hamburger } from "svelte-hamburgers";
   import { onMount } from "svelte";
-  import SunIcon from "@inqling/svelte-icons/solid/sun.svelte";
-  import MoonIcon from "@inqling/svelte-icons/solid/moon.svelte";
 
   export let currentTab: string;
   export let isDark: boolean;
@@ -20,30 +19,12 @@
     else currentTab = location.hash = tabs[0].href;
   }
 
-  // Get dark theme
-  function getDark() {
-    let dark = localStorage.getItem("dark");
-    if (dark != null) return dark == "true";
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-
-  // Toggle theme
-  function toggleTheme() {
-    isDark = !isDark;
-    localStorage.setItem("dark", `${isDark}`);
-  }
-
   // Code to run when navbar loads
   onMount(() => {
     // Responsive design
     const responsiveQuery = window.matchMedia("(min-width: 720px)");
     responsiveQuery.addEventListener("change", (e) => (isMobile = !e.matches));
     isMobile = !responsiveQuery.matches;
-
-    // Set theme
-    const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    themeQuery.addEventListener("change", () => (isDark = getDark()));
-    isDark = getDark();
 
     // Set tab
     handleTab();
@@ -71,16 +52,7 @@
         {/each}
       </ul>
     {/if}
-    <button
-      title="Switch to {isDark ? 'light' : 'dark'} theme"
-      on:click={toggleTheme}
-    >
-      {#if isDark}
-        <SunIcon id="icon" />
-      {:else}
-        <MoonIcon id="icon" />
-      {/if}
-    </button>
+    <ThemeSwitcher bind:isDark />
   </nav>
 </div>
 
@@ -148,29 +120,11 @@
       background-color: $secondary;
       color: $black;
     }
-
-    button {
-      background-color: $black;
-      color: $accent2;
-      border: 3px solid $accent1;
-      border-radius: 50%;
-      height: 32px;
-      width: 32px;
-      margin: auto;
-      margin-right: 2vh;
-      padding: 3px;
-      cursor: pointer;
-    }
   }
 
   @media (min-width: 720px) {
     nav {
       height: auto;
-
-      button {
-        height: 38px;
-        width: 38px;
-      }
     }
   }
 </style>
