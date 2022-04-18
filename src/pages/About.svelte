@@ -73,6 +73,12 @@
     padding: 0;
   }
 
+  .section {
+    line-height: 1.5;
+    width: 80vw;
+    max-width: 720px;
+  }
+
   a {
     color: $accent3;
     text-decoration: none;
@@ -90,21 +96,15 @@
     margin: 2rem auto;
   }
 
-  .section {
-    line-height: 1.5;
-    width: 80vw;
-    max-width: 720px;
+  h2 {
+    color: $accent2;
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
 
-    h2 {
-      color: $accent2;
-      font-size: 2rem;
-      margin: 1rem auto;
-    }
-
-    p,
-    span {
-      font-size: 1em;
-    }
+  p,
+  span {
+    font-size: 1em;
   }
 
   // Responsive
@@ -121,15 +121,13 @@
       font-size: 10vw;
     }
 
-    .section {
-      h2 {
-        font-size: 6vw;
-      }
+    h2 {
+      font-size: 6vw;
+    }
 
-      p,
-      span {
-        font-size: 3vw;
-      }
+    p,
+    span {
+      font-size: 3vw;
     }
   }
 </style>

@@ -80,6 +80,11 @@
     padding: 0;
   }
 
+  .section {
+    line-height: 1.5;
+    max-width: 720px;
+  }
+
   a {
     color: $accent3;
     text-decoration: none;
@@ -114,21 +119,20 @@
     padding: 0 3px;
   }
 
-  .section {
-    line-height: 1.5;
-    max-width: 720px;
-
-    h2 {
-      color: $accent2;
-      font-size: 2rem;
-      margin: 1rem auto;
-    }
+  h2 {
+    color: $accent2;
+    font-size: 2rem;
+    margin: 1rem auto;
   }
 
   // Responsive
   @media (max-width: 480px) {
     #content {
       padding: 0 5%;
+    }
+
+    .section {
+      width: 80vw;
     }
 
     h1 {
@@ -140,12 +144,8 @@
       font-size: 3vw;
     }
 
-    .section {
-      width: 80vw;
-
-      h2 {
-        font-size: 6vw;
-      }
+    h2 {
+      font-size: 6vw;
     }
   }
 </style>

@@ -7,17 +7,18 @@
 
   let currentTab: string;
   let isDark: boolean;
+  let name = "the_4n0nym0u53";
   let tabs = [
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
-    { label: "Privacy Policy", href: "#privacy" },
-    { label: "SearX", href: "https://searx.theanonymouse.xyz" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" },
+    { href: "#privacy", label: "Privacy Policy" },
+    { href: "https://searx.theanonymouse.xyz", label: "SearX" },
   ];
 </script>
 
 <div id="content" class:dark={isDark}>
   <header>
-    <NavBar bind:currentTab bind:isDark {tabs} />
+    <NavBar bind:currentTab bind:isDark {name} {tabs} />
   </header>
   <main>
     {#if currentTab === tabs[0].href}

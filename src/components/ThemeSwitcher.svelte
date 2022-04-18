@@ -3,6 +3,7 @@
   import MoonIcon from "@inqling/svelte-icons/solid/moon.svelte";
   import { onMount } from "svelte";
 
+  // Prop
   export let isDark: boolean;
 
   // Get dark theme

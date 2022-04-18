@@ -37,15 +37,15 @@
     font-size: 0.8rem;
     text-align: center;
     margin: 0.5em;
+  }
 
-    a {
-      text-decoration: none;
-      color: $accent3;
-    }
+  a {
+    text-decoration: none;
+    color: $accent3;
+  }
 
-    img {
-      height: 1em;
-    }
+  img {
+    height: 1em;
   }
 
   @media (max-width: 480px) {
