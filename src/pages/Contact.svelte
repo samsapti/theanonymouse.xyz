@@ -11,14 +11,19 @@
       <li>
         <span>
           Email:
-          <a href="mailto:hello@theanonymouse.xyz">hello@theanonymouse.xyz</a>
+          <a rel="noopener noreferrer" href="mailto:hello@theanonymouse.xyz">
+            hello@theanonymouse.xyz
+          </a>
         </span>
         <ul>
           <li>
             <span>
               PGP key:
               <a href="/pgp.asc">Here</a>,
-              <a href="https://github.com/theanonymousexyz/pgp-public-key">
+              <a
+                rel="noopener noreferrer"
+                href="https://github.com/theanonymousexyz/pgp-public-key"
+              >
                 here
               </a>
               or on your preferred keyserver
@@ -29,7 +34,10 @@
       <li>
         <span>
           Mastodon:
-          <a href="https://ruby.social/@theanonymousexyz">
+          <a
+            rel="noopener noreferrer"
+            href="https://ruby.social/@theanonymousexyz"
+          >
             @theanonymousexyz@ruby.social
           </a>
         </span>
@@ -37,7 +45,10 @@
       <li>
         <span>
           Matrix:
-          <a href="https://matrix.to/#/@4n0nym0u53:tchncs.de">
+          <a
+            rel="noopener noreferrer"
+            href="https://matrix.to/#/@4n0nym0u53:tchncs.de"
+          >
             @4n0nym0u53:tchncs.de
           </a>
         </span>
@@ -63,7 +74,7 @@
   <div class="section">
     <h2>Social media</h2>
     <p>I don't use that sh*t.</p>
-    <a href="https://www.fsf.org/fb">
+    <a rel="noopener noreferrer" href="https://www.fsf.org/fb">
       <img {src} alt="Not f'd — you won't find me on Facebook" />
     </a>
   </div>

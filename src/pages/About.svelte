@@ -22,7 +22,9 @@
       I develop primarily Free/Libre & Open Source Software (FLOSS), and I also
       frequently contribute to other FLOSS projects. You can see what I'm
       currently working on over on my
-      <a href="https://github.com/theanonymousexyz">GitHub profile</a>.
+      <a rel="noopener noreferrer" href="https://github.com/theanonymousexyz">
+        GitHub profile
+      </a>.
     </p>
   </div>
   <div class="section">
@@ -31,7 +33,9 @@
     <ul>
       <li>
         <span>
-          <a href="https://searx.theanonymouse.xyz">SearX</a>
+          <a rel="noopener noreferrer" href="https://searx.theanonymouse.xyz">
+            SearX
+          </a>
           - a privacy preserving metasearch engine
         </span>
       </li>
@@ -45,7 +49,12 @@
       <li>
         <span>
           A
-          <a href="https://mirror.theanonymouse.xyz/artix-linux/">mirror</a>
+          <a
+            rel="noopener noreferrer"
+            href="https://mirror.theanonymouse.xyz/artix-linux/"
+          >
+            mirror
+          </a>
           for Artix Linux repository packages (it is in their mirrorlist)
         </span>
       </li>

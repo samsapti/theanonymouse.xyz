@@ -15,19 +15,23 @@
     </p>
     <p>
       The hosting provider of this website and the public services is
-      <a href="https://www.hetzner.com/">Hetzner Online GmbH</a>. According to
-      their privacy policy, they do not store any log data about what is sent
-      and received to/from the server hosting this site. The only thing that is
-      displayed to the server administrator (me) is general metrics, such as
-      overall time-based usage of memory, processing power, network bandwidth,
-      etc. This is strictly non-identifiable information. Please refer to their
-      privacy policy if this concerns you.
+      <a rel="noopener noreferrer" href="https://www.hetzner.com/">
+        Hetzner Online GmbH
+      </a>. According to their privacy policy, they do not store any log data
+      about what is sent and received to/from the server hosting this site. The
+      only thing that is displayed to the server administrator (me) is general
+      metrics, such as overall time-based usage of memory, processing power,
+      network bandwidth, etc. This is strictly non-identifiable information.
+      Please refer to their privacy policy if this concerns you.
     </p>
     <p>
       Furthermore, this website and the public services are hosted in Germany.
       This means that all data regarding the site and services are stored inside
       the EU with an EU-based hosting provider. Therefore, the
-      <a href="https://www.nsa.gov/Signals-Intelligence/FISA/">
+      <a
+        rel="noopener noreferrer"
+        href="https://www.nsa.gov/Signals-Intelligence/FISA/"
+      >
         Foreign Intelligence Surveillance Act (FISA)
       </a>
       does not apply to this website and the public services.
@@ -47,10 +51,12 @@
     <p>
       On SearX, search results are filtered and sanitized for tracking content
       with a piece of software called
-      <a href="https://github.com/asciimoo/morty">Morty</a>. In short, I use the
-      default settings in the
-      <a href="https://github.com/searx/searx-docker">SearX Docker setup</a>,
-      which are optimized for privacy.
+      <a rel="noopener noreferrer" href="https://github.com/asciimoo/morty">
+        Morty
+      </a>. In short, I use the default settings in the
+      <a rel="noopener noreferrer" href="https://github.com/searx/searx-docker">
+        SearX Docker setup
+      </a>, which are optimized for privacy.
     </p>
   </div>
   <div class="section">
