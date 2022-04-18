@@ -31,10 +31,8 @@
       <a
         rel="noopener noreferrer"
         href="https://www.nsa.gov/Signals-Intelligence/FISA/"
-      >
-        Foreign Intelligence Surveillance Act (FISA)
-      </a>
-      does not apply to this website and the public services.
+        >Foreign Intelligence Surveillance Act (FISA)</a
+      > does not apply to this website and the public services.
     </p>
     <p>
       Regarding SearX, keep in mind that it is a metasearch engine (meaning it
@@ -54,9 +52,9 @@
       <a rel="noopener noreferrer" href="https://github.com/asciimoo/morty"
         >Morty</a
       >. In short, I use the default settings in the
-      <a rel="noopener noreferrer" href="https://github.com/searx/searx-docker">
-        SearX Docker setup
-      </a>, which are optimized for privacy.
+      <a rel="noopener noreferrer" href="https://github.com/searx/searx-docker"
+        >SearX Docker setup</a
+      >, which are optimized for privacy.
     </p>
   </div>
   <div class="section">

@@ -33,10 +33,9 @@
     <ul>
       <li>
         <span>
-          <a rel="noopener noreferrer" href="https://searx.theanonymouse.xyz">
-            SearX
-          </a>
-          - a privacy preserving metasearch engine
+          <a rel="noopener noreferrer" href="https://searx.theanonymouse.xyz"
+            >SearX</a
+          > - a privacy preserving metasearch engine
         </span>
       </li>
       <li>
@@ -51,11 +50,8 @@
           A
           <a
             rel="noopener noreferrer"
-            href="https://mirror.theanonymouse.xyz/artix-linux/"
-          >
-            mirror
-          </a>
-          for Artix Linux repository packages (it is in their mirrorlist)
+            href="https://mirror.theanonymouse.xyz/artix-linux/">mirror</a
+          > for Artix Linux repository packages (it is in their mirrorlist)
         </span>
       </li>
     </ul>
