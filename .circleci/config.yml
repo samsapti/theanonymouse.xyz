@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/app
     docker:
-      - image: node:17-alpine
+      - image: node:17
     steps:
       - checkout
       - run: npm install
