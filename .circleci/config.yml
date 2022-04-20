@@ -5,11 +5,18 @@ jobs:
     working_directory: ~/app
     docker:
       - image: node:17
+    resource_class: small
     steps:
       - checkout
-      - run: npm install -g pnpm
-      - run: pnpm install
-      - run: pnpm build
+      - run:
+          name: Install pnpm
+          command: npm install -g pnpm
+      - run:
+          name: Install dependencies
+          command: pnpm install
+      - run:
+          name: Build website
+          command: pnpm build
       - persist_to_workspace:
           root: ~/app
           paths:
@@ -19,11 +26,16 @@ jobs:
     working_directory: ~/app
     docker:
       - image: cimg/base:stable
+    resource_class: small
     steps:
       - attach_workspace:
           at: ~/app
-      - run: ssh -o "StrictHostKeyChecking no" -p ${SSH_PORT} ${SSH_USER}@${SSH_HOST} "rm -rf ~/website/dist/assets"
-      - run: scp -o "StrictHostKeyChecking no" -P ${SSH_PORT} -r dist ${SSH_USER}@${SSH_HOST}:website
+      - run:
+          name: Remove old assets
+          command: ssh -o "StrictHostKeyChecking no" -p ${SSH_PORT} ${SSH_USER}@${SSH_HOST} "rm -rfv ~/website/dist/assets"
+      - run:
+          name: Copy new build to server
+          command: scp -o "StrictHostKeyChecking no" -P ${SSH_PORT} -r dist ${SSH_USER}@${SSH_HOST}:website
 
 workflows:
   default:
