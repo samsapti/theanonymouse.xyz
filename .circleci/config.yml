@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: npm install -g pnpm
       - run: pnpm install
-      - run: pnpm run build
+      - run: pnpm build
       - persist_to_workspace:
           root: ~/app
           paths:
