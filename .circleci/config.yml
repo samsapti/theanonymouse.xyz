@@ -7,8 +7,9 @@ jobs:
       - image: node:17
     steps:
       - checkout
-      - run: npm install
-      - run: npm run build
+      - run: npm install -g pnpm
+      - run: pnpm install
+      - run: pnpm run build
       - persist_to_workspace:
           root: ~/app
           paths:
