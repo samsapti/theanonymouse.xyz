@@ -4,7 +4,7 @@ specifiers:
   '@iconify/svelte': 2.2.1
   '@inqling/svelte-icons': 0.2.2
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.41
-  '@tsconfig/svelte': 2.0.1
+  '@tsconfig/svelte': 3.0.0
   node-sass: 7.0.1
   sass: 1.50.1
   svelte: 3.47.0
@@ -19,7 +19,7 @@ devDependencies:
   '@iconify/svelte': 2.2.1
   '@inqling/svelte-icons': 0.2.2
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.41_svelte@3.47.0+vite@2.9.5
-  '@tsconfig/svelte': 2.0.1
+  '@tsconfig/svelte': 3.0.0
   node-sass: 7.0.1
   sass: 1.50.1
   svelte: 3.47.0
@@ -136,8 +136,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /@tsconfig/svelte/2.0.1:
-    resolution: {integrity: sha512-aqkICXbM1oX5FfgZd2qSSAGdyo/NRxjWCamxoyi3T8iVQnzGge19HhDYzZ6NrVOW7bhcWNSq9XexWFtMzbB24A==}
+  /@tsconfig/svelte/3.0.0:
+    resolution: {integrity: sha512-pYrtLtOwku/7r1i9AMONsJMVYAtk3hzOfiGNekhtq5tYBGA7unMve8RvUclKLMT3PrihvJqUmzsRGh0RP84hKg==}
     dev: true
 
   /@types/minimist/1.2.2:
