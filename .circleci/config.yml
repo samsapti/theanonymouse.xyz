@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/app
     docker:
-      - image: node:18
+      - image: node:17
     resource_class: small
     steps:
       - checkout
