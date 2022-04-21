@@ -21,7 +21,6 @@ jobs:
           root: ~/app
           paths:
             - ./dist
-
   deploy:
     working_directory: ~/app
     docker:
