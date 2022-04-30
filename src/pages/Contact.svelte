@@ -187,7 +187,6 @@
   }
 
   p,
-  code,
   li {
     font-size: 1em;
   }
@@ -224,13 +223,13 @@
       font-size: 10vw;
     }
 
-    p,
-    span {
-      font-size: 3vw;
-    }
-
     h2 {
       font-size: 6vw;
+    }
+
+    p,
+    li {
+      font-size: 3vw;
     }
   }
 </style>

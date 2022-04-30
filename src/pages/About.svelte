@@ -108,13 +108,12 @@
   }
 
   p,
-  li,
-  span {
+  li {
     font-size: 1em;
   }
-  
+
   li {
-    padding-bottom: 0.5em;
+    margin: 0.5em auto;
   }
 
   // Responsive
@@ -136,7 +135,7 @@
     }
 
     p,
-    span {
+    li {
       font-size: 3vw;
     }
   }
