@@ -108,8 +108,8 @@
         me.
       </li>
       <li>
-        My master key is never exposed to the internet. It is only accessed on
-        an air gapped laptop, with no form of internet connectivity, no
+        My master key is never exposed to the internet. It is only ever accessed
+        on an air gapped laptop, with no form of internet connectivity, no
         persistent storage medium, using a persistence-free live USB running
         <a rel="noopener noreferrer" href="https://tails.boum.org">Tails</a>.
       </li>
