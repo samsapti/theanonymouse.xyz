@@ -60,10 +60,18 @@
     </p>
     <ul>
       <li>
-        SchildiChat Desktop (Linux) - <code>LVHNZUZIRO</code>
+        SchildiChat Desktop (Linux)
+        <ul>
+          <li>Session ID: <code>LVHNZUZIRO</code></li>
+          <li>Session key: <code>tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME</code></li>
+        </ul>
       </li>
       <li>
-        SchildiChat Android - <code>WWSKTPLQCN</code>
+        SchildiChat Android
+        <ul>
+          <li>Session ID: <code>WWSKTPLQCN</code></li>
+          <li>Session key: <code>kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4</code></li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -185,7 +193,7 @@
   }
 
   li {
-    padding-bottom: 0.5em;
+    margin: 0.5em auto;
   }
 
   code {
