@@ -60,14 +60,10 @@
     </p>
     <ul>
       <li>
-        <span>
-          SchildiChat Desktop (Linux) - <code>LVHNZUZIRO</code>
-        </span>
+        SchildiChat Desktop (Linux) - <code>LVHNZUZIRO</code>
       </li>
       <li>
-        <span>
-          SchildiChat Android - <code>WWSKTPLQCN</code>
-        </span>
+        SchildiChat Android - <code>WWSKTPLQCN</code>
       </li>
     </ul>
   </div>
@@ -77,6 +73,71 @@
     <a rel="noopener noreferrer" href="https://www.fsf.org/fb">
       <img {src} alt="Not f'd — you won't find me on Facebook" />
     </a>
+  </div>
+  <div class="section">
+    <h2>How I protect my accounts</h2>
+    <p>I take the following steps in order to protect my online accounts:</p>
+    <ul>
+      <li>
+        All my accounts are protected by a randomly generated passphrase, that
+        is usually 64 characters long, depending on whether the service supports
+        that length.
+      </li>
+      <li>
+        All my accounts are protected with 2FA if they support it. A FIDO U2F
+        certified security key is used if supported by the service, otherwise
+        TOTP is used.
+      </li>
+      <li>
+        All my account credentials are stored in a password manager, that is
+        protected by a strong passphrase and 2FA.
+      </li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>How I protect my PGP key</h2>
+    <p>I take the following steps in order to protect my private PGP key:</p>
+    <ul>
+      <li>
+        My master key is stored on a hardware-encrypted storage medium, which is
+        kept in a fireproof safe. The key itself is protected by a strong
+        passphrase.
+      </li>
+      <li>
+        My subkeys are stored on an OpenPGP smartcard that I always carry with
+        me.
+      </li>
+      <li>
+        My master key is never exposed to the internet. It is only accessed on
+        an air gapped laptop, with no form of internet connectivity, no
+        persistent storage medium, using a persistence-free live USB running
+        <a rel="noopener noreferrer" href="https://tails.boum.org">Tails</a>.
+      </li>
+      <li>
+        My subkeys are set to expire after at most 6 months, after which they
+        are extended for another 6 months.
+      </li>
+      <li>
+        My master key is set to expire after at most 2 years, after which it is
+        extended for another 2 years.
+      </li>
+      <li>
+        If my PGP keys are not extended before they expire, you should assume
+        they have been compromised.
+      </li>
+      <li>
+        If my PGP keys gets compromised, and I am able to, I will revoke them.
+      </li>
+      <li>
+        My subkeys being compromised does not necessarily mean that my master
+        key is compromised, as they are stored separately. If only the subkeys
+        get compromised, I will only revoke those.
+      </li>
+      <li>
+        I store a revocation certificate for the master key in a separate safe
+        place, in case it is compromised.
+      </li>
+    </ul>
   </div>
 </div>
 
@@ -93,6 +154,7 @@
 
   .section {
     line-height: 1.5;
+    width: 80vw;
     max-width: 720px;
   }
 
@@ -107,8 +169,7 @@
     display: block;
     width: 50%;
     max-width: 250px;
-    margin: 50px 0 auto auto;
-    margin-right: 0;
+    margin: auto 0 25px auto;
   }
 
   h1 {
@@ -119,12 +180,17 @@
 
   p,
   code,
-  span {
+  li {
     font-size: 1em;
   }
 
+  li {
+    padding-bottom: 0.5em;
+  }
+
   code {
-    background-color: $accent3;
+    background-color: $black;
+    color: $white;
     border-radius: 3px;
     font-family: "Fira Code", "Roboto Mono", Consolas, monospace;
     padding: 0 3px;

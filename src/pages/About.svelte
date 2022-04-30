@@ -108,8 +108,13 @@
   }
 
   p,
+  li,
   span {
     font-size: 1em;
+  }
+  
+  li {
+    padding-bottom: 0.5em;
   }
 
   // Responsive
