@@ -9,49 +9,45 @@
     <p>Feel free to use any of the below contact methods:</p>
     <ul>
       <li>
-        <span>
-          Email:
-          <a rel="noopener noreferrer" href="mailto:hello@theanonymouse.xyz">
-            hello@theanonymouse.xyz
-          </a>
-        </span>
+        Email:
+        <a rel="noopener noreferrer" href="mailto:hello@theanonymouse.xyz">
+          hello@theanonymouse.xyz
+        </a>
         <ul>
           <li>
-            <span>
-              PGP key:
-              <a href="/pgp.asc">Here</a>,
-              <a
-                rel="noopener noreferrer"
-                href="https://github.com/theanonymousexyz/pgp-public-key"
-              >
-                here
-              </a>
-              or on your preferred keyserver
-            </span>
+            PGP key:
+            <a href="/pgp.asc">Here</a>,
+            <a
+              rel="noopener noreferrer"
+              href="https://github.com/theanonymousexyz/pgp-public-key"
+            >
+              here
+            </a>
+            or on your preferred keyserver
+          </li>
+          <li>
+            PGP key fingerprint:
+            <code>FFFD8602E0E9E6D9E30EEBEEDFD39F412054CB84</code>
           </li>
         </ul>
       </li>
       <li>
-        <span>
-          Mastodon:
-          <a
-            rel="noopener noreferrer"
-            href="https://ruby.social/@theanonymousexyz"
-          >
-            @theanonymousexyz@ruby.social
-          </a>
-        </span>
+        Mastodon:
+        <a
+          rel="noopener noreferrer"
+          href="https://ruby.social/@theanonymousexyz"
+        >
+          @theanonymousexyz@ruby.social
+        </a>
       </li>
       <li>
-        <span>
-          Matrix:
-          <a
-            rel="noopener noreferrer"
-            href="https://matrix.to/#/@4n0nym0u53:tchncs.de"
-          >
-            @4n0nym0u53:tchncs.de
-          </a>
-        </span>
+        Matrix:
+        <a
+          rel="noopener noreferrer"
+          href="https://matrix.to/#/@4n0nym0u53:tchncs.de"
+        >
+          @4n0nym0u53:tchncs.de
+        </a>
       </li>
     </ul>
     <p>
@@ -64,9 +60,8 @@
         <ul>
           <li>Session ID: <code>LVHNZUZIRO</code></li>
           <li>
-            Session key: <code
-              >tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME</code
-            >
+            Session key:
+            <code>tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME</code>
           </li>
         </ul>
       </li>
@@ -75,9 +70,8 @@
         <ul>
           <li>Session ID: <code>WWSKTPLQCN</code></li>
           <li>
-            Session key: <code
-              >kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4</code
-            >
+            Session key:
+            <code>kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4</code>
           </li>
         </ul>
       </li>
