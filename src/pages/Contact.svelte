@@ -63,14 +63,22 @@
         SchildiChat Desktop (Linux)
         <ul>
           <li>Session ID: <code>LVHNZUZIRO</code></li>
-          <li>Session key: <code>tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME</code></li>
+          <li>
+            Session key: <code
+              >tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME</code
+            >
+          </li>
         </ul>
       </li>
       <li>
         SchildiChat Android
         <ul>
           <li>Session ID: <code>WWSKTPLQCN</code></li>
-          <li>Session key: <code>kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4</code></li>
+          <li>
+            Session key: <code
+              >kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4</code
+            >
+          </li>
         </ul>
       </li>
     </ul>
@@ -81,6 +89,43 @@
     <a rel="noopener noreferrer" href="https://www.fsf.org/fb">
       <img {src} alt="Not f'd — you won't find me on Facebook" />
     </a>
+  </div>
+  <div class="section">
+    <h2>Community</h2>
+    <p>
+      Feel free to join my Matrix community, where you can chat with other
+      people about everything privacy, security, FLOSS, or anything else in the
+      off-topic room.
+    </p>
+    <ul>
+      <li>
+        Matrix space:
+        <a
+          rel="noopener noreferrer"
+          href="https://matrix.to/#/#theanonymousexyz-privacy-space:tchncs.de"
+        >
+          #theanonymousexyz-privacy-space:tchncs.de
+        </a>
+      </li>
+      <li>
+        On-topic room:
+        <a
+          rel="noopener noreferrer"
+          href="https://matrix.to/#/#theanonymousexyz-privacy-general:tchncs.de"
+        >
+          #theanonymousexyz-privacy-general:tchncs.de
+        </a>
+      </li>
+      <li>
+        Off-topic room:
+        <a
+          rel="noopener noreferrer"
+          href="https://matrix.to/#/#theanonymousexyz-privacy-chat:tchncs.de"
+        >
+          #theanonymousexyz-privacy-chat:tchncs.de
+        </a>
+      </li>
+    </ul>
   </div>
   <div class="section">
     <h2>How I protect my accounts</h2>
