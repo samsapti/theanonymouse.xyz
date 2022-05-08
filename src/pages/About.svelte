@@ -1,10 +1,11 @@
 <script lang="ts">
-  import src from "../assets/profile.png";
+  import profile from "../assets/profile.png";
+  import club512kb from "../assets/512kb-blue.svg";
 </script>
 
 <div id="content">
   <div id="profile">
-    <img {src} alt="the_4n0nym0u53 profile" />
+    <img src={profile} alt="the_4n0nym0u53 profile" />
     <h1>Hello from the_4n0nym0u53!</h1>
   </div>
   <div class="section">
@@ -59,6 +60,11 @@
       <em>More services coming soon</em>
     </p>
   </div>
+  <div id="club512kb" class="section">
+    <a rel="noopener noreferrer" href="https://512kb.club/#512">
+      <img src={club512kb} alt="512KB Club - Blue Team" />
+    </a>
+  </div>
 </div>
 
 <style lang="scss">
@@ -76,6 +82,17 @@
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+
+  #club512kb {
+    text-align: center;
+    margin: 50px auto auto;
+
+    img {
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .section {
