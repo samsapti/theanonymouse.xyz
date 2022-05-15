@@ -78,6 +78,22 @@
     margin: 1rem auto;
   }
 
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $accent3;
+  }
+
   // Responsive
   @media (max-width: 480px) {
     #content {

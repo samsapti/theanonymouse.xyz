@@ -58,14 +58,14 @@
       <li>
         SchildiChat Desktop (Linux)
         <pre>
-          Session ID: LVHNZUZIRO<br>
+          Session ID: LVHNZUZIRO<br />
           Session key: tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME
         </pre>
       </li>
       <li>
         SchildiChat Android
         <pre>
-          Session ID: WWSKTPLQCN<br>
+          Session ID: WWSKTPLQCN<br />
           Session key: kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4
         </pre>
       </li>
@@ -244,6 +244,22 @@
     color: $accent2;
     font-size: 2rem;
     margin: 1rem auto;
+  }
+
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $accent3;
   }
 
   // Responsive
