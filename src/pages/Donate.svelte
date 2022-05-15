@@ -1,9 +1,10 @@
 <script lang="ts">
-  import src from "../assets/xmr-qr.png";
+  import xmr from "../assets/xmr-qr.png";
+  import btc from "../assets/btc-qr.png";
 </script>
 
 <div id="content">
-  <h1>Donations</h1>
+  <h1>Donation</h1>
   <p class="note">
     <em>
       If you want to support me, I will happily accept anything sent through the
@@ -12,16 +13,29 @@
   </p>
   <div class="section">
     <h2>Monero (XMR)</h2>
-    <p>My XMR address is:</p>
+    <h3>Full wallet address</h3>
     <pre>
       86Z9Y7L17CEccLuTzjD1GG49TWLpdDs8dhm49GFwLzppb6iaqPmV6gp1sqJXybBnuRhPDAmt6Mn9rGFVzonBASsQCb7BxaV
     </pre>
-    <p>OpenAlias is also an option:</p>
+    <h3>OpenAlias</h3>
     <pre>
       xmr.donate.theanonymouse.xyz
     </pre>
-    <p>You can also scan this QR code:</p>
-    <img {src} alt="XMR address embedded in a QR code" />
+    <h3>QR code</h3>
+    <img src={xmr} alt="XMR address embedded in a QR code" />
+  </div>
+  <div class="section">
+    <h2>Bitcoin (BTC)</h2>
+    <h3>Full wallet address</h3>
+    <pre>
+      bc1q4vwx8kdf7rg7p4yt33ly6kp5cec6nw8ed8xmsc
+    </pre>
+    <h3>OpenAlias</h3>
+    <pre>
+      btc.donate.theanonymouse.xyz
+    </pre>
+    <h3>QR code</h3>
+    <img src={btc} alt="BTC address embedded in a QR code" />
   </div>
 </div>
 
@@ -46,7 +60,7 @@
     display: block;
     max-width: 250px;
     width: 50%;
-    margin: 25px auto;
+    margin: 20px auto 50px;
     border-radius: 12px;
   }
 
@@ -54,6 +68,17 @@
     color: $accent1;
     font-size: 3rem;
     margin: 2rem auto;
+  }
+
+  h2 {
+    color: $accent2;
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem auto;
   }
 
   p {
@@ -70,12 +95,6 @@
     padding: 12px;
     margin: 8px 0;
     font-family: "Fira Code", "Roboto Mono", Consolas, monospace;
-  }
-
-  h2 {
-    color: $accent2;
-    font-size: 2rem;
-    margin: 1rem auto;
   }
 
   ::-webkit-scrollbar {
@@ -111,6 +130,10 @@
 
     h2 {
       font-size: 6vw;
+    }
+
+    h3 {
+      font-size: 4vw;
     }
 
     p,
