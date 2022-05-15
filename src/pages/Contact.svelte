@@ -27,7 +27,7 @@
           </li>
           <li>
             PGP key fingerprint:
-            <code>FFFD8602E0E9E6D9E30EEBEEDFD39F412054CB84</code>
+            <pre>FFFD8602E0E9E6D9E30EEBEEDFD39F412054CB84</pre>
           </li>
         </ul>
       </li>
@@ -57,23 +57,17 @@
     <ul>
       <li>
         SchildiChat Desktop (Linux)
-        <ul>
-          <li>Session ID: <code>LVHNZUZIRO</code></li>
-          <li>
-            Session key:
-            <code>tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME</code>
-          </li>
-        </ul>
+        <pre>
+          Session ID: LVHNZUZIRO<br>
+          Session key: tZfo CYjt chF6 IC5C uWjT drw3 4ytQ Eo+g 7F2p 5w5X MME
+        </pre>
       </li>
       <li>
         SchildiChat Android
-        <ul>
-          <li>Session ID: <code>WWSKTPLQCN</code></li>
-          <li>
-            Session key:
-            <code>kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4</code>
-          </li>
-        </ul>
+        <pre>
+          Session ID: WWSKTPLQCN<br>
+          Session key: kUE3 YP5b BgTS 2PaX 0AAH NxTU nrA0 x0+8 fDqq 9/vq IX4
+        </pre>
       </li>
     </ul>
   </div>
@@ -234,12 +228,16 @@
     margin: 0.5em auto;
   }
 
-  code {
+  pre {
     background-color: $black;
     color: $white;
-    border-radius: 3px;
+    white-space: pre-line;
+    white-space: nowrap;
+    overflow-x: auto;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
     font-family: "Fira Code", "Roboto Mono", Consolas, monospace;
-    padding: 0 3px;
   }
 
   h2 {
@@ -266,8 +264,9 @@
       font-size: 6vw;
     }
 
+    li,
     p,
-    li {
+    pre {
       font-size: 3vw;
     }
   }

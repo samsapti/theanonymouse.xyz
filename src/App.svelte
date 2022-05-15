@@ -2,6 +2,7 @@
   import About from "./pages/About.svelte";
   import Contact from "./pages/Contact.svelte";
   import PrivacyPolicy from "./pages/PrivacyPolicy.svelte";
+  import Donate from "./pages/Donate.svelte";
   import Footer from "./components/Footer.svelte";
   import NavBar from "./components/NavBar.svelte";
 
@@ -12,7 +13,7 @@
     { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
     { href: "#privacy", label: "Privacy Policy" },
-    { href: "https://searx.theanonymouse.xyz", label: "SearX" },
+    { href: "#donate", label: "Donate" },
   ];
 </script>
 
@@ -27,6 +28,8 @@
       <Contact />
     {:else if currentTab === tabs[2].href}
       <PrivacyPolicy />
+    {:else if currentTab === tabs[3].href}
+      <Donate />
     {/if}
   </main>
   <footer>
