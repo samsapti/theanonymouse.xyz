@@ -12,8 +12,8 @@
   let tabs = [
     { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
-    { href: "#privacy", label: "Privacy Policy" },
     { href: "#donate", label: "Donate" },
+    { href: "#privacy", label: "Privacy Policy" },
   ];
 </script>
 
@@ -27,9 +27,9 @@
     {:else if currentTab === tabs[1].href}
       <Contact />
     {:else if currentTab === tabs[2].href}
-      <PrivacyPolicy />
-    {:else if currentTab === tabs[3].href}
       <Donate />
+    {:else if currentTab === tabs[3].href}
+      <PrivacyPolicy />
     {/if}
   </main>
   <footer>
