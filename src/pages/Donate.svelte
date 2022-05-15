@@ -66,7 +66,7 @@
     white-space: pre-line;
     white-space: nowrap;
     overflow-x: auto;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 12px;
     margin: 8px 0;
     font-family: "Fira Code", "Roboto Mono", Consolas, monospace;
@@ -88,6 +88,7 @@
 
   ::-webkit-scrollbar-thumb {
     background: $primary;
+    border-radius: 2px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
