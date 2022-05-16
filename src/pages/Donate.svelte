@@ -4,7 +4,7 @@
 </script>
 
 <div id="content">
-  <h1>Donation</h1>
+  <h1>Donations</h1>
   <p class="note">
     <em>
       If you want to support me, I will happily accept anything sent through the
