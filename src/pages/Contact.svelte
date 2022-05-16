@@ -230,7 +230,7 @@
 
   pre {
     background-color: $black;
-    color: $white;
+    color: $secondary;
     white-space: pre-line;
     white-space: nowrap;
     overflow-x: auto;
