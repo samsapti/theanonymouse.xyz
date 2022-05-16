@@ -167,12 +167,10 @@
         they have been compromised.
       </li>
       <li>
-        If my PGP keys gets compromised, and I am able to, I will revoke them.
-      </li>
-      <li>
-        My subkeys being compromised does not necessarily mean that my master
-        key is compromised, as they are stored separately. If only the subkeys
-        get compromised, I will only revoke those.
+        If my PGP keys get compromised, and I am able to, I will revoke them. My
+        subkeys being compromised does not necessarily mean that my master key
+        is compromised, as they are stored separately. If only the subkeys get
+        compromised, I will only revoke those.
       </li>
       <li>
         I store a revocation certificate for the master key in a separate safe
