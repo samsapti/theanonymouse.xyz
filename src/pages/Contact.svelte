@@ -79,43 +79,6 @@
     </a>
   </div>
   <div class="section">
-    <h2>Community</h2>
-    <p>
-      Feel free to join my Matrix community, where you can chat with other
-      people about everything privacy, security, FLOSS, or anything else in the
-      off-topic room.
-    </p>
-    <ul>
-      <li>
-        Matrix space:
-        <a
-          rel="noopener noreferrer"
-          href="https://matrix.to/#/#theanonymousexyz-privacy-space:tchncs.de"
-        >
-          #theanonymousexyz-privacy-space:tchncs.de
-        </a>
-      </li>
-      <li>
-        On-topic room:
-        <a
-          rel="noopener noreferrer"
-          href="https://matrix.to/#/#theanonymousexyz-privacy-general:tchncs.de"
-        >
-          #theanonymousexyz-privacy-general:tchncs.de
-        </a>
-      </li>
-      <li>
-        Off-topic room:
-        <a
-          rel="noopener noreferrer"
-          href="https://matrix.to/#/#theanonymousexyz-privacy-chat:tchncs.de"
-        >
-          #theanonymousexyz-privacy-chat:tchncs.de
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="section">
     <h2>How I protect my accounts</h2>
     <p>I take the following steps in order to protect my online accounts:</p>
     <ul>
