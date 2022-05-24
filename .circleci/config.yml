@@ -31,10 +31,10 @@ jobs:
           at: ~/app
       - run:
           name: Remove old assets
-          command: ssh -o "StrictHostKeyChecking no" -p ${SSH_PORT} ${SSH_USER}@${SSH_HOST} "rm -rfv ~/website/dist/assets"
+          command: ssh -o "StrictHostKeyChecking no" -p ${SSH_PORT} ${SSH_USER}@${SSH_HOST} "rm -rfv ~/docker/caddy/website/dist/assets"
       - run:
-          name: Copy new build to server
-          command: scp -o "StrictHostKeyChecking no" -P ${SSH_PORT} -r dist ${SSH_USER}@${SSH_HOST}:website
+          name: Deploy new build to VPS
+          command: scp -o "StrictHostKeyChecking no" -P ${SSH_PORT} -r dist ${SSH_USER}@${SSH_HOST}:docker/caddy/website
 
 workflows:
   default:
