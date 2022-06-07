@@ -1,3 +1,10 @@
+### Note
+
+This pseudonym is deprecated and no longer maintained. The website will be taken down.
+Please refer to my other website:
+
+https://samsapti.dev
+
 # Personal Website of the_4n0nym0u53
 
 This is the personal website of the_4n0nym0u53 at https://theanonymouse.xyz.
